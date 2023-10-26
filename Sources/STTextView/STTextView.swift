@@ -22,7 +22,7 @@ import STTextKitPlus
 import AVFoundation
 
 /// A TextKit2 text view without NSTextView baggage
-open class STTextView: NSView, NSTextInput, NSTextContent {
+@objc open class STTextView: NSView, NSTextInput, NSTextContent {
     /// Posted before an object performs any operation that changes characters or formatting attributes.
     public static let textWillChangeNotification = NSNotification.Name("NSTextWillChangeNotification")
 
